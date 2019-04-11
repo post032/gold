@@ -1,0 +1,16 @@
+.page-header {
+  box-sizing: border-box;
+  position: relative;
+  display: flex;
+  flex-direction: column-reverse;
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  z-index: 99;
+}
+@media (min-width: @size-tablet) {
+  .page-header {
+    flex-direction: column;
+  }
+}

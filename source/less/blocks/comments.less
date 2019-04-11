@@ -1,0 +1,44 @@
+.comments {
+  box-sizing: border-box;
+  position: relative;
+  padding-top: 1px;
+}
+
+.comments__title {
+  font-size: 34px;
+  font-family: "Lato";
+  color: rgb(211, 176, 128);
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.comments__bg {
+  background: url("../img/BG_3.jpg") no-repeat top center;
+  background-size: cover;
+  background-color: #2a2c3a;
+  min-height: 568px;
+}
+
+.comments__list p {
+  font-size: 18px;
+  font-family: "Lato LightItalic";
+  color: rgb(255, 255, 255);
+  font-style: italic;
+  line-height: 1.556;
+}
+.comments__lists {
+  display: flex;
+}
+
+.comments__list {
+  min-height: 300px;
+  border-right: 2px solid #d3b800;
+  padding: 0 10px;
+}
+
+@media (min-width: @size-desktop) {
+  .comments__title {
+    margin-top: 55px;
+    margin-bottom: 60px;
+  }
+}

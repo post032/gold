@@ -1,0 +1,25 @@
+.slick-prev:before,
+.slick-next:before {
+  content: "";
+  display: flex;
+  width: 20px;
+  height: 20px;
+  border-top: 2px solid rgb(211, 176, 128);
+  border-left: 2px solid rgb(211, 176, 128);
+    -webkit-font-smoothing: antialiased;
+    position: absolute;
+    -moz-osx-font-smoothing: grayscale;
+    outline: none;
+
+}
+
+
+.slick-prev:before {
+  transform: rotate(-45deg);
+  left: 42px;
+}
+
+.slick-next:before {
+  transform: rotate(135deg);
+  right: 42px;
+}

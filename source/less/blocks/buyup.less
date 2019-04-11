@@ -1,0 +1,242 @@
+.buyup {
+  position: relative;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.buyup__title {
+  font-size: 34px;
+  line-height: 36px;
+  font-family: "Lato";
+  color: rgb(34, 36, 48);
+  font-family: "Lato Light";
+  text-transform: uppercase;
+  text-align: center;
+  padding: 35px 15px 15px;
+}
+
+.buyup__title span {
+  font-family: "Lato";
+  font-weight: bold;
+}
+
+.buyup__lists {
+  padding: 0;
+  margin: 0;
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  position: relative;
+}
+.buyup__list {
+  display: block;
+  text-align: center;
+  width: 300px;
+}
+
+.buyup__mark {
+  font-size: 24px;
+  font-family: "Lato";
+  color: rgb(0, 0, 0);
+  line-height: 1.167;
+}
+
+.buyup__number {
+  font-size: 55px;
+  line-height: 55px;
+  font-family: "Lato Black";
+  color: #efca98;
+  padding-right: 15px;
+  position: relative;
+}
+
+.buyup__number::after {
+  content: "";
+  display: block;
+  width: 92px;
+  height: 2px;
+  position: absolute;
+  left: 0;
+  bottom: -20px;
+  border-bottom: 2px solid #d3b080;
+}
+
+.buyup__block {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  margin-top: 38px;
+}
+
+.buyup__price {
+  font-family: "Lato Light";
+  font-size: 34px;
+  color: #efca98;
+  text-transform: uppercase;
+  position: relative;
+  margin-top: 60px;
+  margin-bottom: 20px;
+}
+
+.buyup__price::after {
+  content: "";
+  transform: skew(-28deg);
+  position: absolute;
+  top: -5px;
+  left: 6px;
+  width: calc(100% - 18px);
+  height: calc(100% + 13px);
+  background-color: #2f3241;
+  z-index: -1;
+}
+
+.buyup__price span {
+  font-family: "Lato";
+}
+
+.buyup__text {
+  font-size: 16px;
+  font-family: "Lato Light";
+  color: rgb(0, 0, 0);
+  text-transform: uppercase;
+}
+.buyup__list:hover .buyup__number,
+.buyup__list:focus .buyup__number {
+  color: #efca98;
+  transition: 1s;
+}
+
+.buyup__list:hover .buyup__price,
+.buyup__list:focus .buyup__price {
+  color: #efca98;
+  transition: 1s;
+}
+
+.buyup__info p {
+  font-size: 14px;
+  font-family: "Lato";
+  color: rgb(110, 110, 110);
+  line-height: 1.571;
+}
+
+.buyup__info {
+  width: 80%;
+  height: 60px;
+  overflow: hidden;
+  box-sizing: border-box;
+}
+
+.buyup__open,
+.buyup__close {
+  font-size: 18px;
+  text-transform: uppercase;
+  color: #000000;
+  background-color: #dedede;
+  border: none;
+  border-radius: 50px;
+  padding: 5px 70px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.buyup__button {
+  display: none;
+}
+@media (min-width: @size-tablet) {
+  .buyup__lists {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    width: 80%;
+    grid-row-gap: 28px;
+    grid-column-gap: 28px;
+    justify-content: center;
+    align-items: center;
+  }
+
+.buyup__price::after {
+  display: none;
+}
+
+
+  .buyup__list {
+    border-right: 2px solid #d3b080;
+    width: 370px;
+    min-height: 331px;
+    text-align: left;
+    background: url("../img/gold_grape.png") no-repeat;
+    background-position: 295px 90px;
+    background-size: 228px;
+  }
+
+  .buyup__block {
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+  }
+
+  .buyup__price {
+    color: rgb(0, 0, 0);
+  }
+
+  .buyup__number {
+    color: #000000;
+  }
+
+  .buyup__number:hover,
+   .buyup__number:focus {
+    color: #efca98;
+  }
+
+  .buyup__list:hover .buyup__price::before,
+   .buyup__list:focus .buyup__price::before {
+    content: "";
+    transform: skew(-28deg);
+    position: absolute;
+    top: -5px;
+    left: -9px;
+    width: calc(100% - 135px);
+    height: calc(100% + 13px);
+    background-color: #2f3241;
+    z-index: -1;
+    transition: 1s;
+  }
+
+  .buyup__list:hover,
+  .buyup__list:focus {
+    background-position: 275px 90px;
+    transition: 1s;
+  }
+
+  .buyup__open,
+  .buyup__close {
+    display: none;
+  }
+  .buyup__info {
+    width: 100%;
+    min-height: 160px;
+    overflow: visible;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 30px;
+    justify-content: space-between;
+  }
+
+  .buyup__info p {
+    padding: 0 10px;
+  }
+}
+@media (min-width: @size-desktop) {
+  .buyup__lists {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .buyup__info p {
+    max-width: 533px;
+  }
+}

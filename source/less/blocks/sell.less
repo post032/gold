@@ -1,0 +1,103 @@
+.sell {
+  box-sizing: border-box;
+  position: relative;
+  display: flex;
+  flex-direction: column-reverse;
+  align-items: center;
+  justify-content: center;
+}
+
+.sell__title {
+  font-size: 34px;
+  font-family: "Lato";
+  color: rgb(34, 36, 48);
+  font-weight: bold;
+  text-transform: uppercase;
+  line-height: 1.176;
+  margin-left: 15px;
+  margin-right: 15px;
+  text-align: center;
+}
+
+.sell__wrapper p {
+  font-size: 18px;
+  font-family: "Lato";
+  color: rgb(27, 27, 27);
+  line-height: 1.444;
+  margin-left: 15px;
+  margin-right: 15px;
+}
+
+.sell__info h3 {
+  font-size: 18px;
+  font-family: "Lato";
+  color: rgb(10, 94, 173);
+  line-height: 1.111;
+  border-top: 2px solid #d3b800;
+  padding-top: 30px;
+}
+
+.sell__info a {
+  text-decoration: nome;
+  font-size: 12px;
+  font-family: "Lato";
+  color: rgb(81, 81, 81);
+  line-height: 1.667;
+}
+
+.sell__lists {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+.sell__list img {
+  width: 154px;
+  height: 120px;
+}
+
+.sell__wrapper {
+  height: 220px;
+  overflow: hidden;
+}
+
+.sell__block {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.sell__list {
+  padding: 30px;
+  display: flex;
+}
+@media (min-width: @size-tablet) {
+  .sell {
+    flex-direction: row;
+    align-items: flex-end;
+    background: url("../img/MoneyHand.jpg") no-repeat top left;
+    background-size: 530px;
+  }
+  .sell__wrapper {
+    min-height: 690px;
+    width: 372px;
+  }
+}
+@media (min-width: @size-desktop) {
+  .sell {
+    background: none;
+  }
+
+  .sell__bg {
+    background: url("../img/BG_5.jpg") no-repeat;
+    }
+
+.sell__title {
+  text-align: left;
+}
+
+.sell__lists {
+  display: flex;
+}
+}
