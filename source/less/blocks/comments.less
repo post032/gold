@@ -1,44 +1,116 @@
+.comments__bg {
+  // background-color: #2a2c3a;
+  background: url("../img/BG_3.jpg") no-repeat top center;
+  background-size: cover;
+  // min-height: 568px;
+}
+
 .comments {
   box-sizing: border-box;
   position: relative;
   padding-top: 1px;
+  min-height: 470px;
+}
+
+.comments::before {
+  content: "";
+  display: block;
+  width: 283px;
+  height: 33px;
+  background: url("../img/pen.png") no-repeat top center;
+  background-size: contain;
+  position: absolute;
+  bottom: -20px;
+  left: 50%;
+  transform: translateX(-50%);
 }
 
 .comments__title {
-  font-size: 34px;
-  font-family: "Lato";
+  font-size: 24px;
+  font-family: "Lato Light";
   color: rgb(211, 176, 128);
   text-transform: uppercase;
   text-align: center;
+  margin-top: 58px;
+  margin-bottom: 25px;
 }
 
-.comments__bg {
-  background: url("../img/BG_3.jpg") no-repeat top center;
-  background-size: cover;
-  background-color: #2a2c3a;
-  min-height: 568px;
+.comments__title span {
+  font-family: "Lato";
+  font-weight: bold;
+  color: #ffffff;
 }
 
 .comments__list p {
-  font-size: 18px;
+  font-size: 14px;
   font-family: "Lato LightItalic";
   color: rgb(255, 255, 255);
   font-style: italic;
   line-height: 1.556;
+  text-align: center;
+  margin: 15px 60px;
 }
+
 .comments__lists {
   display: flex;
 }
 
 .comments__list {
-  min-height: 300px;
-  border-right: 2px solid #d3b800;
-  padding: 0 10px;
+  min-height: 230px;
 }
+@media (min-width: @size-tablet) {
+  .comments {
+    min-height: 518px;
+  }
 
+  .comments__title {
+    font-size: 34px;
+  }
+
+  .comments__title br {
+  display: none;
+  }
+
+  .comments__title span {
+    font-family: "Lato Light";
+    color: rgb(211, 176, 128);
+  }
+
+
+  .comments::before {
+    width: 452px;
+    height: 52px;
+    bottom: -25px;
+  }
+
+  .comments__list {
+    border-right: 2px solid #d3b800;
+    min-height: 288px;
+  }
+
+  .comments__list p {
+    font-size: 18px;
+    margin: 15px 40px;
+  }
+}
 @media (min-width: @size-desktop) {
   .comments__title {
     margin-top: 55px;
     margin-bottom: 60px;
+  }
+
+  .comments__list p {
+    text-align: left;
+    margin: 15px;
+  }
+
+  .comments {
+    min-height: 568px;
+  }
+
+  .comments::before {
+    width: 621px;
+    height: 71px;
+    bottom: -30px;
   }
 }

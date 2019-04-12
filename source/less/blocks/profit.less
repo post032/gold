@@ -13,33 +13,57 @@
 }
 
 .profit__title {
-  font-size: 34px;
+  font-size: 26px;
   font-family: "Lato";
   color: rgb(255, 255, 255);
   font-weight: bold;
   text-transform: uppercase;
-  line-height: 1.176;
+  line-height: 28px;
   text-align: center;
+  margin-top: 60px;
 }
 .profit__title span {
   color: #ffdea0;
 }
 
 .profit__text {
-  font-size: 18px;
+  font-size: 14px;
   font-family: "Lato";
   color: rgb(27, 27, 27);
   line-height: 1.444;
-  margin: 0 30px;
-  margin-bottom: 30px;
+  margin: 0 15px;
+  margin-bottom: 10px;
 }
 
-.profit__wrapper {
-  height: 58px;
-  overflow: hidden;
+// .profit__wrapper {
+//   height: 58px;
+//   overflow: hidden;
+// }
+
+.profit__all {
+  display: none;
 }
 
+.profit__min {
+  display: inline-block;
+}
 @media (min-width: @size-tablet) {
+  .profit__text {
+    font-size: 18px;
+  }
+  .profit__all {
+    display: inline-block;
+  }
+
+  .profit__min {
+    display: none;
+  }
+
+  .profit__title {
+    font-size: 34px;
+    line-height: 1.176;
+  }
+
   .profit {
     align-items: flex-start;
   }

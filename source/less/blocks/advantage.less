@@ -4,41 +4,64 @@
   display: flex;
   flex-direction: column;
 }
-.advantage__bg{
+
+.advantage__bg {
   background-color: #333333;
+  background-image: url("../img/BG_2.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: top center;
+  position: relative;
+  z-index: 5;
 }
 
 .advantage__title {
-  font-size: 34px;
-  line-height: 36px;
+  font-size: 20px;
+  line-height: 24px;
   font-family: "Lato Light";
   color: rgb(239, 202, 152);
   text-transform: uppercase;
   text-align: center;
 }
 
+.advantage__title span {
+  font-family: "Lato";
+  font-weight: bold;
+  color: #ffffff;
+}
+
 .advantage__lists {
   display: flex;
-  margin-bottom: 84px;
+  margin-left: 15px;
+  margin-right: 15px;
+  margin-bottom: 18px;
 }
 
 .advantage__list {
   background-color: #000000;
   padding: 10px;
   text-align: center;
+  width: 270px;
+  min-height: 155px;
+  margin-bottom: 18px;
+  position: relative;
+  z-index: 6;
 }
 
 .advantage__line p {
-  font-size: 22px;
+  font-size: 16px;
   font-family: "Lato Medium";
   color: rgb(255, 255, 255);
   text-transform: uppercase;
   line-height: 1.455;
   text-align: center;
+  margin-left: 70px;
+  margin-right: 70px;
 }
 
 .advantage__line {
-  min-height: 204px;
+  min-height: 149px;
+  max-width: 365px;
   text-align: center;
   vertical-align: middle;
   border: solid 2px rgb(255, 255, 255);
@@ -47,22 +70,59 @@
   align-items: center;
 }
 
+.advantage__list--img1 {
+  background: url("../img/banner_1.jpg") no-repeat top center;
+  background-size: auto;
+}
+
+.advantage__list--img2 {
+  background: url("../img/banner_2.jpg") no-repeat top center;
+  background-size: auto;
+}
+
+.advantage__list--img3 {
+  background: url("../img/banner_3.jpg") no-repeat top center;
+  background-size: auto;
+}
+
+.advantage__list--img4 {
+  background: url("../img/banner_4.jpg") no-repeat top center;
+  background-size: auto;
+}
+
+.advantage__list--img5 {
+  background: url("../img/banner_5.jpg") no-repeat top center;
+  background-size: auto;
+}
+
+.advantage__list--img6 {
+  background: url("../img/banner_6.jpg") no-repeat top center;
+  background-size: auto;
+}
 @media (min-width: @size-tablet) {
+  .advantage__title {
+    font-size: 34px;
+    line-height: 36px;
+  }
+
+  .advantage__title br {
+    display: none;
+  }
+
+  .advantage__title span {
+    font-family: "Lato Light";
+    color: rgb(239, 202, 152);
+}
   .advantage {
     align-items: center;
     justify-content: center;
     background-size: contain;
   }
 
-  .advantage__bg{
-  background-image: url("../img/BG_2.jpg");
-  background-repeat: repeat;
-  background-position: top center;
-}
-
   .advantage__lists {
     display: grid;
     grid-template-columns: 1fr 1fr;
+    margin-bottom: 84px;
   }
 
   .advantage__list {
@@ -72,7 +132,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-
+    margin-bottom: 0;
   }
 
   .advantage__line {
@@ -80,42 +140,19 @@
     min-height: 229px;
   }
 
-   .advantage__list--img1 {
-      background: url("../img/banner_1.jpg") no-repeat;
-      background-size: contain;
-   }
-   .advantage__list--img2 {
-     background: url("../img/banner_2.jpg") no-repeat;
-     background-size: contain;
-   }
-   .advantage__list--img3 {
-     background: url("../img/banner_3.jpg") no-repeat;
-     background-size: contain;
-   }
-   .advantage__list--img4 {
-     background: url("../img/banner_4.jpg") no-repeat;
-     background-size: contain;
-   }
-   .advantage__list--img5 {
-     background: url("../img/banner_5.jpg") no-repeat;
-     background-size: contain;
-   }
-   .advantage__list--img6 {
-     background: url("../img/banner_6.jpg") no-repeat;
-     background-size: contain;
-   }
+  .advantage__line p {
+    font-size: 22px;
+    margin: 50px 66px;
+  }
 
-   .advantage__line p {
-     margin: 50px 66px;
-   }
+  .advantage__line {
+    border: none;
+  }
 
-   .advantage__line {
-     border: none;
-}
- .advantage__list:hover .advantage__line,
- .advantage__list:focus .advantage__line {
-   border: solid 2px rgb(255, 255, 255);
- }
+  .advantage__list:focus .advantage__line,
+  .advantage__list:hover .advantage__line {
+    border: solid 2px rgb(255, 255, 255);
+  }
 }
 @media (min-width: @size-desktop) {
   .advantage__lists {

@@ -7,18 +7,6 @@
   flex-direction: column;
 
 }
-.map::before {
-  content: "";
-  display: block;
-  width: 100%;
-  height: auto;
-  background: url("../img/pen.png") no-repeat top center;
-  background-size: contain;
-  position: absolute;
-  top: 5px;
-  left: 50%;
-  transform: translateX(-50%);
-}
 
 .map__title {
   font-size: 34px;
@@ -28,7 +16,7 @@
   text-transform: uppercase;
   text-align: center;
   margin-bottom: 66px;
-  margin-top: 95px;
+  margin-top: 60px;
 }
 
 .map__title span {
@@ -38,7 +26,13 @@
 
 .map__element {
   height: 370px;
-  width: 90%;
+  width: 100%;
   box-shadow: 0 5px 29px rgba(0,0,0,0.17);
-  // background: url("../img/map.jpg") no-repeat;
+}
+
+@media (min-width: @size-tablet) {
+  .map__element {
+    width: 90%;
+    box-shadow: 0 5px 29px rgba(0,0,0,0.17);
+  }
 }

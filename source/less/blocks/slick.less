@@ -1,25 +1,226 @@
-.slick-prev:before,
-.slick-next:before {
+.buyup__lists .slick-prev:before,
+.buyup__lists .slick-next:before {
   content: "";
-  display: flex;
+  display: block;
   width: 20px;
   height: 20px;
-  border-top: 2px solid rgb(211, 176, 128);
-  border-left: 2px solid rgb(211, 176, 128);
+  border-top: 1px solid rgb(42, 46, 63);
+  border-left: 1px solid rgb(42, 46, 63);
+  position: absolute;
+  top: 0;
     -webkit-font-smoothing: antialiased;
     position: absolute;
     -moz-osx-font-smoothing: grayscale;
     outline: none;
-
+    z-index: 101;
 }
 
+.buyup__lists .slick-prev,
+.buyup__lists .slick-next {
+  position: absolute;
+  top: 30px;
+  z-index: 100;
+}
 
-.slick-prev:before {
-  transform: rotate(-45deg);
+.buyup__lists .slick-prev {
   left: 42px;
 }
 
-.slick-next:before {
-  transform: rotate(135deg);
+.buyup__lists .slick-next {
   right: 42px;
+}
+
+.buyup__lists .slick-prev:before {
+  transform: rotate(-45deg);
+  // left: 42px;
+}
+
+.buyup__lists .slick-next:before {
+  transform: rotate(135deg);
+  // right: 42px;
+}
+
+.advantage__lists .slick-prev,
+.advantage__lists .slick-next {
+  position: absolute;
+  top: 90px;
+  z-index: 100;
+}
+
+.advantage__lists .slick-prev {
+  left: -10px;
+}
+
+.advantage__lists .slick-next {
+  right: -10px;
+}
+
+.advantage__lists .slick-prev::after,
+.advantage__lists .slick-next::after {
+  content: "";
+  display: block;
+  width: 30px;
+  height: 55px;
+  background-color: #c59c6a;
+  position: absolute;
+  top: -20px;
+  z-index: 3;
+}
+
+.advantage__lists .slick-prev::after {
+  left: -5px;
+  border-top-right-radius: 100px;
+  border-bottom-right-radius: 100px;
+}
+
+.advantage__lists .slick-next::after {
+  right: -5px;
+  border-top-left-radius: 100px;
+  border-bottom-left-radius: 100px;
+}
+
+.advantage__lists .slick-prev:before,
+.advantage__lists .slick-next:before {
+  content: "";
+  display: block;
+  width: 13px;
+  height: 13px;
+  border-top: 1px solid rgb(42, 46, 63);
+  border-left: 1px solid rgb(42, 46, 63);
+    -webkit-font-smoothing: antialiased;
+    position: absolute;
+    top: 0;
+    -moz-osx-font-smoothing: grayscale;
+    outline: none;
+    z-index: 101;
+}
+
+
+.advantage__lists .slick-prev::before {
+  left: 5px;
+  transform: rotate(-45deg);
+}
+
+.advantage__lists .slick-next::before {
+  right: 5px;
+  transform: rotate(135deg);
+}
+
+
+
+
+.slick-initialized .slick-slide {
+    display: grid;
+    justify-content: center;
+    align-items: center;
+  }
+
+
+
+  .comments__lists .slick-prev,
+  .comments__lists .slick-next {
+    position: absolute;
+    top: 110;
+    z-index: 100;
+  }
+
+  .comments__lists .slick-prev {
+    left: 20px;
+  }
+
+  .comments__lists .slick-next {
+    right: 20px;
+  }
+
+  .comments__lists .slick-prev:before,
+  .comments__lists .slick-next:before {
+    content: "";
+    display: block;
+    width: 20px;
+    height: 20px;
+    border-top: 1px solid #ffffff;
+    border-left: 1px solid #ffffff;
+    position: absolute;
+    top: 0;
+      -webkit-font-smoothing: antialiased;
+      position: absolute;
+      -moz-osx-font-smoothing: grayscale;
+      outline: none;
+  }
+
+
+  .comments__lists .slick-prev:before {
+    transform: rotate(-45deg);
+    left: 0;
+  }
+
+  .comments__lists .slick-next:before {
+    transform: rotate(135deg);
+    right: 0;
+  }
+
+  .comments__lists .slick-dots li button:before {
+    opacity: 1;
+    color: #c5c5c5;
+    font-size: 30px;
+}
+
+.comments__lists .slick-dots li.slick-active button:before {
+    opacity: 1;
+    color: #d3b080;
+}
+
+
+
+.brands .slick-prev,
+.brands .slick-next {
+  position: absolute;
+  top: 110;
+  z-index: 100;
+}
+
+.brands .slick-prev {
+  left: 20px;
+}
+
+.brands .slick-next {
+  right: 20px;
+}
+
+.brands .slick-prev:before,
+.brands .slick-next:before {
+  content: "";
+  display: block;
+  width: 20px;
+  height: 20px;
+  border-top: 1px solid rgb(42, 46, 63);
+  border-left: 1px solid rgb(42, 46, 63);
+  position: absolute;
+  top: 0;
+    -webkit-font-smoothing: antialiased;
+    position: absolute;
+    -moz-osx-font-smoothing: grayscale;
+    outline: none;
+}
+
+
+.brands .slick-prev:before {
+  transform: rotate(-45deg);
+  left: 0;
+}
+
+.brands .slick-next:before {
+  transform: rotate(135deg);
+  right: 0;
+}
+
+.brands .slick-dots li button:before {
+  opacity: 1;
+  color: #c5c5c5;
+  font-size: 30px;
+}
+
+.brands .slick-dots li.slick-active button:before {
+  opacity: 1;
+  color: #d3b080;
 }
