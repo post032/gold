@@ -1399,8 +1399,7 @@ input[type="radio"].visually-hidden {
   .profit__title {
     margin-top: 82px;
     margin-bottom: 55px;
-    margin-left: 30px;
-    margin-right: 30px;
+    margin-left: 15px;
   }
   .profit__title {
     text-align: left;
@@ -1539,7 +1538,8 @@ input[type="radio"].visually-hidden {
     background: none;
   }
   .sell__bg {
-    background: url("../img/BG_5.jpg") no-repeat;
+    background: url("../img/BG_5.jpg") no-repeat top center;
+    background-size: auto;
   }
   .sell__lists {
     display: -webkit-box;
@@ -1866,7 +1866,7 @@ input[type="radio"].visually-hidden {
 }
 @media (min-width: 1170px) {
   .map-site__item h3 {
-    margin: 10px 30px;
+    margin: 0;
   }
   .map-site__item {
     width: 250px;
