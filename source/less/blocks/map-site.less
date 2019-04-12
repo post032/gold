@@ -10,16 +10,11 @@
   background-color: #1e2332;
 }
 
-.map-site h2 {
-  font-size: 30px;
-  font-family: "Lato Light";
-  color: #ffffff;
-  text-transform: uppercase;
-  line-height: 0.667;
-  text-align: center;
+.map-site__title {
+  display: none;
 }
 
-.map-site__item h3 {
+.map-site__item--title {
   font-size: 20px;
   font-family: "Lato Semibold";
   color: #ffffff;
@@ -29,7 +24,7 @@
   position: relative;
 }
 
-.map-site__item h3::after {
+.map-site__item--title::after {
   content: "";
 display: block;
 width: 0;
@@ -41,19 +36,25 @@ top: 10px;
 right: 6px;
 }
 
-.map-site__item--active h3::after {
+.map-site__item--active .map-site__item--title::after {
   content: "";
 transform: rotate(90deg);
 transition: 1s;
 border-left: 18px solid #ffffff;
 }
 
-.map-site__list p {
+.map-site__list {
+  margin-top: 10px;
+}
+
+.map-site__list a {
   font-size: 16px;
   font-family: "Lato Light";
   color: #e0b27e;
   line-height: 1.7;
-  margin: 20px 30px;
+  margin-left: 30px;
+  margin-right: 10px;
+  text-decoration: none;
 }
 
 .map-site__lists {
@@ -62,6 +63,7 @@ border-left: 18px solid #ffffff;
   list-style-type: none;
   margin-top: 20px;
   animation: bounce 0.5s;
+
     }
     @keyframes bounce {
       0% {
@@ -82,7 +84,17 @@ border-left: 18px solid #ffffff;
 
 
 @media (min-width: @size-tablet) {
-
+  .map-site__title {
+    display: block;
+    font-size: 30px;
+    font-family: "Lato Light";
+    color: #ffffff;
+    text-transform: uppercase;
+    line-height: 0.667;
+    text-align: center;
+    margin-top: 25px;
+    margin-bottom: 25px;
+  }
   .map-site {
     align-items: space-between;
   }
@@ -92,28 +104,36 @@ border-left: 18px solid #ffffff;
     background-color: #2a2c3a;
   }
 
-  .map-site__item h3::after {
+  .map-site__item .map-site__item--title::after {
   display: none;
+  }
+
+  .map-site__item--title::before {
+    content: "";
+    display: block;
+    width: 70px;
+    height: 1px;
+    background-color: #ffffff;
+    position: absolute;
+    top: 50px;
+    left: 0;
   }
 
   .map-site__lists {
     background: none;
+    margin-top: 30px;
   }
 
   .map-site__item {
     width: 200px;
   }
 
-  .map-site__item h3 {
+  .map-site__item--title {
     margin: 0;
     margin-bottom: 55px;
   }
 
-  .map-site__list p {
-    margin: 0;
-  }
-
-  .map-site h2 {
+  .map-site__title {
     margin-top: 55px;
     margin-bottom: 70px;
   }
@@ -125,8 +145,9 @@ border-left: 18px solid #ffffff;
     width: 100%;
   }
 
-  .map-site__list p {
+  .map-site__list a {
     color: #ffffff;
+    margin: 0;
   }
   .map-site__lists--mobile {
     display: flex;
@@ -136,7 +157,7 @@ border-left: 18px solid #ffffff;
 
 @media (min-width: @size-desktop) {
 
-  .map-site__item h3 {
+  .map-site__item--title {
     margin: 0;
 }
 

@@ -69,41 +69,35 @@
     $('#sell__open').toggleClass('buyup__button');
     $('#sell__close').toggleClass('buyup__button');
   });
-
-  $(window).on('load resize', function() {
-    if ($(window).width() < 813) {
-
+  
       $('#open1').click(function(e) {
         e.preventDefault();
         $(this).toggleClass('map-site__item--active');
         $('#close1').toggleClass('map-site__lists--mobile');
-        $('map-site__lists').not('#close1').toggleClass('map-site__lists--mobile', 'map-site__lists--active');
+        $('map-site__lists').not('#close1').toggleClass('map-site__lists--mobile');
       });
 
       $('#open2').click(function(e) {
         e.preventDefault();
         $(this).toggleClass('map-site__item--active');
         $('#close2').toggleClass('map-site__lists--mobile');
-        $('map-site__lists').not('#close2').toggleClass('map-site__lists--mobile', 'map-site__lists--active');
+        $('map-site__lists').not('#close2').toggleClass('map-site__lists--mobile');
       });
 
       $('#open3').click(function(e) {
         e.preventDefault();
         $(this).toggleClass('map-site__item--active');
         $('#close3').toggleClass('map-site__lists--mobile');
-        $('map-site__lists').not('#close3').toggleClass('map-site__lists--mobile', 'map-site__lists--active');
+        $('map-site__lists').not('#close3').toggleClass('map-site__lists--mobile');
       });
 
       $('#open4').click(function(e) {
         e.preventDefault();
         $(this).toggleClass('map-site__item--active');
         $('#close4').toggleClass('map-site__lists--mobile');
-        $('map-site__lists').not('#close4').toggleClass('map-site__lists--mobile', 'map-site__lists--active');
+        $('map-site__lists').not('#close4').toggleClass('map-site__lists--mobile');
       });
 
-
-    }
-  });
 
 
 
