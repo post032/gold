@@ -1006,6 +1006,10 @@ input[type="radio"].visually-hidden {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   margin-left: 15px;
   margin-right: 15px;
   margin-bottom: 18px;
@@ -1628,6 +1632,10 @@ input[type="radio"].visually-hidden {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 .comments__list {
   min-height: 230px;
@@ -1646,6 +1654,12 @@ input[type="radio"].visually-hidden {
   .comments__title span {
     font-family: "Lato Light";
     color: #d3b080;
+  }
+  .comments__lists {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
   }
   .comments::before {
     width: 452px;
@@ -1731,6 +1745,10 @@ input[type="radio"].visually-hidden {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   margin: 120px 0;
 }
 .brand__item a img {
